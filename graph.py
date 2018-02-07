@@ -1,6 +1,6 @@
 import plotly
-from plotly.offline import init_notebook_mode, iplot
-init_notebook_mode(connected=True)
+from plotly.offline import iplot
+
 def trace(data, markers = True):
     x_values = list(map(lambda point: point['x'],data))
     y_values = list(map(lambda point: point['y'],data))
